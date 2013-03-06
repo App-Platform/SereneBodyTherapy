@@ -122,51 +122,6 @@ $(".grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid
 <!-- Call Colorbox -->
 <script type="text/javascript">
 
-  $(document).one('pageshow', '#examples', function () {      
-    var settings = {
-      username: 'jimhunkinsent',
-      maxresults: 50,
-      mode: 'album',
-      album: 'AppPlatform',
-      thumbCrop: 1,
-      showAlbumDescription: false,
-    };
-      $("#gallery_1").pwi(settings);
-  });
-
-</script>
-
-<!-- Form Validation -->
-<script type="text/javascript">
-$(function() {
-    $( "#form1" ).validate({
-        submitHandler: function(form) {
-           var data= $(form).serialize()
-        
-                $.ajax({
-                type: "POST",
-                url: "php/infoRequest.php",
-                //url: "http://app.app-platform.net/infoRequest.php",
-                data: data,
-                success: function(){
-                    $(form).fadeOut();
-                          $('.thanks1').fadeIn(2500);
-                }
-                });
-            return false;
-        }
-    });
-});     
-</script>
-
-<!-- Form reset button -->
-<script type="text/javascript">
-$(function() { $('#reset_button1').click( function() { $('.thanks1').fadeOut(); $('.form1').fadeIn(2500); $("#form1")[0].reset(); });});
-</script>
-
-<!-- Picasa Web Integrator -->
-<script type="text/javascript">
-
   $(document).ready(function () {
 	var settings = {
 	  username: 'jimhunkinsent',
